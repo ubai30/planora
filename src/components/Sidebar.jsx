@@ -1,4 +1,4 @@
-import { BsSearch } from "react-icons/bs";
+import { HiMiniChevronRight } from "react-icons/hi2";
 import '../App.css'
 
 function Sidebar() {
@@ -6,25 +6,15 @@ function Sidebar() {
     return (
         <>
             <aside className="sidebar">
-                <h2>My Workspace</h2>
-
-                <div class="nav-item" onclick="toggle(this)">
-                    <span class="icon">📄</span> Notes
-                </div>
-                <div class="sub-items">
-                    <div class="nav-item">📌 Daily</div>
-                    <div class="nav-item">🧠 Ideas</div>
-                </div>
-
-                <div class="nav-item" onclick="toggle(this)">
-                    <span class="icon">📚</span> Projects
-                </div>
-                <div class="sub-items">
-                    <div class="nav-item">💼 Portfolio</div>
-                    <div class="nav-item">📈 Marketing</div>
-                </div>
-
-                <div class="nav-item">⚙️ Settings</div>
+                <button 
+                className="image-text"
+                type="button">
+                    <span className="image">
+                        <img src="./src/assets/img/planoralogo.png" alt="planora logo"/>
+                    </span>
+                    <span className="name">PLANORA</span>
+                    <HiMiniChevronRight className="toggle"/>
+                </button>
             </aside>
         </>
     )
